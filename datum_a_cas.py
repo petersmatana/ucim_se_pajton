@@ -25,4 +25,28 @@ def rozdil_casu():
 
     print 'dnes     = ', dnes
 
-rozdil_casu()
+# rozdil_casu()
+
+
+def porovnavani_casu():
+    import datetime
+    from datetime import timedelta
+    dnes = datetime.datetime.now()
+    minulost = timedelta(days=123)
+
+    # toto nemuzu udelat, nemuzu porovnavat cas typu
+    # datetime a timedelta
+    # if dnes > minulost:
+    #     ...
+
+    print type(dnes), dnes
+    print type(minulost), minulost
+    x = datetime.datetime.now()-minulost
+    print type(x), x
+
+    if dnes > x:
+        print 'ano'
+    else:
+        print 'ne'
+
+porovnavani_casu()
