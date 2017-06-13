@@ -55,13 +55,13 @@ def f1(a, b='nic', c=13):
 # f1(10, None, 'ahoj')
 
 
-def f2(yeeee, *lol, **omg):
+def f2(yeeee, *lol, **omgdict):
     print 'yeeee = ', yeeee
-    print '*lol = ', lol
-    print '**omg = ', omg
+    print '*lol = ', lol.append('asd')
+    print '**omg = ', omgdict
 
 
-# f2(13, lol=[1,2,3], omg={'a': 1, 'b': 2})
+f2(13, *[[1], [2], [3]], **{'a': 1, 'b': 2})
 
 """
     defakto rozdil mezi args a kwargs je ten ze
@@ -102,7 +102,7 @@ def mensi_jak(n):
 
 
 vetsi = vetsi_jak(10)
-print vetsi(13)
+#print vetsi(13)
 
 mensi = mensi_jak(0)
-print mensi(-13)
+#print mensi(-13)
