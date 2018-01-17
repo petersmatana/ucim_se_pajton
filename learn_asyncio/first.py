@@ -25,5 +25,4 @@ ioloop.run_until_complete(wait_tasks)
 # ani kdyz metody na "jakoby spousteni zkopiruju" tak
 # se to neprovede 2x...
 
-
 ioloop.close()
